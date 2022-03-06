@@ -23,7 +23,7 @@ const menuItems = [
 export const Navbar = () => {
   return (
    <nav className={ styles['menu-container'] }>
-    { menuItems.map(({ text, href }, index) => (<ActiveLink key={ index } text={ text } href={ href } />))}
+    { menuItems.map(({ text, href }) => (<ActiveLink key={ href } text={ text } href={ href } />))}
    </nav> 
   )
 }
